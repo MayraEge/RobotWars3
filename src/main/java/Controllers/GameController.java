@@ -7,10 +7,17 @@ import Service.RobotService;
 import Views.*;
 
 import java.util.ArrayList;
+import java.io.IOException;
 import java.util.List;
 
 public class GameController {
     public static void main(String[] args) {
+        try {
+            String response = HttpRequest.sendGetRequest("https://82rvkz5o22.execute-api.eu-central-1.amazonaws.com/prod/");
+            System.out.println(response);
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
         IntroScreenView.display();
         Battlefield battlefield = new Battlefield(15, 10);
         String robotName = (AskRobotNameView.display());

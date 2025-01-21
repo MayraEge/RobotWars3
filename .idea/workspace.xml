@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c6df97e-6648-4380-b27d-088a4fd09d53" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/HttpRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/Directions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/Directions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Battlefield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Battlefield.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/RobotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/RobotService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/AskPlayerNameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/AskPlayerNameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/AskRobotNameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/AskRobotNameView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/AskSkillPointsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/AskSkillPointsView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/BattlefieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/BattlefieldView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/DisplayWinnerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/DisplayWinnerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/IntroScreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/IntroScreenView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/MoveRobotView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/MoveRobotView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
