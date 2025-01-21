@@ -1,22 +1,49 @@
-import org.springframework.web.bind.annotation.*;
+package Controllers;
 
-@RestController
-@RequestMapping("/spiel")
+import Enums.Directions;
+import Models.Battlefield;
+import Models.Robot;
+import Service.RobotService;
+import Views.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class GameController {
-    private gameCondition gameCondition = new gameCondition();
+    public static void main(String[] args) {
+        IntroScreenView.display();
+        Battlefield battlefield = new Battlefield(15, 10);
+        String robotName = (AskRobotNameView.display());
+        Robot player = new Robot(robotName, 1, 1, 1, 1, 1, 1,   false);
+        Robot target = new Robot("[Z]", 1, 9, 9, 7, 1, 1,  false);
+        AskSkillPointsView.setStats(player);
+        AskSkillPointsView.display(player);
+        List<Robot> robots = new ArrayList<Robot>();
+        robots.add(player);
+        robots.add(target);
+        System.out.println("Sie haben folgenden Roboter ausgewählt: " + player.getRobotName());
 
-    @PostMapping("/bewegen")
-    public String moveRobot(@RequestParam int roboterId, @RequestParam String direction) {
-        Robot robot = gameCondition.getRoboterById(roboterId);
-        robot.move(direction);
-        return "Roboter wurde bewegt";
+        BattlefieldView.display(robots, battlefield);
+        while (!player.isKnockedOut() && !target.isKnockedOut()) {
+            DisplayWinnerView.display(player, target);
+            int move = 1;
+            while (move <= player.getMovementRange() && !player.isKnockedOut() && !target.isKnockedOut()) {
+                Directions direction = MoveRobotView.turn();
+                if (Battlefield.validTurn(direction, player)) {
+                    player.setX(player.getX() + direction.getX());
+                    player.setY(player.getY() + direction.getY());
+                    move += 1;
+                } else {
+                    System.out.println("Zug ungültig.");
+                }
+                BattlefieldView.display(robots, battlefield);
+                if (RobotService.inRange(player, target)) {
+                    Robot.attack(player, target);
+                    DisplayWinnerView.display(player, target);
+                }
+            }
+        }
+
     }
 
-    @PostMapping("/angreifen")
-    public String attack(@RequestParam int attackerId, @RequestParam int targetId) {
-        Robot attacker = gameCondition.getRoboterById(angreiferId);
-        Robot target = gameCondition.getRoboterById(zielId);
-        attacker.attack(target);
-        return "Angriff ausgeführt";
-    }
 }

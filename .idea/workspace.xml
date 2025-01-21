@@ -4,28 +4,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c6df97e-6648-4380-b27d-088a4fd09d53" name="Changes" comment="" />
+    <list default="true" id="1c6df97e-6648-4380-b27d-088a4fd09d53" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Enums/Directions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Enums/Directions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Battlefield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Battlefield.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/RobotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/RobotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/AskPlayerNameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/AskPlayerNameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/AskRobotNameView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/AskRobotNameView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/AskSkillPointsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/AskSkillPointsView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/BattlefieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/BattlefieldView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/DisplayWinnerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/DisplayWinnerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/IntroScreenView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/IntroScreenView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/MoveRobotView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/MoveRobotView.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MayraEge&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MayraEge/RobotWars3.git&quot;,
+    &quot;accountId&quot;: &quot;1219ecbe-d0f0-4d78-bcd7-62f958c68da8&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2qqahdl1HQP1szgt6prIMclzaPT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.GameController.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MAEGE/IdeaProjects/RobotWarsNeu&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
