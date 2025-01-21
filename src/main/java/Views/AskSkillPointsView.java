@@ -5,32 +5,54 @@ import Models.Robot;
 import java.util.Scanner;
 
 public class AskSkillPointsView {
+    private static final int TOTAL_SKILLPOINTS = 10;
+    private static final String MOVEMENT = "m";
+    private static final String ATTACK_DAMAGE = "d";
+    private static final String HEALTH = "g";
+    private static final String ATTACK_RANGE = "r";
+    /**
+     * Verteilt die Skillpunkte auf die Attribute des Roboters basierend auf Nutzereingaben.
+     *
+     * @param player Roboter, dessen Attribute angepasst werden sollen.
+     */
+
     public static void setStats(Robot player) {
     int spend = 0;
-    int skillpoints = 10;
     Scanner scanner = new Scanner(System.in);
-    //char[] skillpoints = new char[10];
-    while (spend < skillpoints) {
+
+    while (spend < TOTAL_SKILLPOINTS) {
         System.out.println("Bitte verteilen Sie 10 Skillpoints auf die folgenden Attribute Ihres Roboters: \n Bewegungsrate: "+ player.getMovementRange() + "\n Schaden: "+ player.getAttackDamage() + "\n Gesundheit: " + player.getHealth() + "\n Reichweite: " + player.getAttackRange());
-        System.out.println("Drücken Sie m für Movementrange, d für Schaden, g für Gesundheit und r für Angriffsreichweite. Sie können noch "+(skillpoints-spend)+" Punkte verteilen.");
+        System.out.println("Drücken Sie m für Movementrange, d für Schaden, g für Gesundheit und r für Angriffsreichweite. Sie können noch "+(TOTAL_SKILLPOINTS - spend)+" Punkte verteilen.");
         String input = scanner.nextLine();
-        if (input.equals("m")) {
-            player.setMovementRange(player.getMovementRange() + 1);
-            spend += 1;
-        } else if (input.equals("d")) {
-            player.setAttackDamage(player.getAttackDamage() + 1);
-            spend += 1;
-        } else if (input.equals("g")) {
-            player.setHealth(player.getHealth() + 1);
-            spend += 1;
-        } else if (input.equals("r")) {
-            player.setAttackRange(player.getAttackRange() + 1);
-            spend += 1;
-        } else {
-            System.out.println("Eingabe ungültig.");
+
+        switch (input) {
+            case MOVEMENT:
+                player.setMovementRange(player.getMovementRange() + 1);
+                spend += 1;
+                break;
+            case ATTACK_DAMAGE:
+                player.setAttackDamage(player.getAttackDamage() + 1);
+                spend += 1;
+                break;
+            case HEALTH:
+                player.setHealth(player.getHealth() + 1);
+                spend += 1;
+                break;
+            case ATTACK_RANGE:
+                player.setAttackRange(player.getAttackRange() + 1);
+                spend += 1;
+                break;
+            default:
+                System.out.println("Eingabe ungültig.");
+                break;
         }
     }
 }
+    /**
+     * Zeigt die aktuellen Attribute des Roboters an.
+     *
+     * @param player Roboter, dessen Attribute angezeigt werden sollen.
+     */
     public static void display(Robot player) {
         System.out.println("Die Attribute Ihres Roboters: \n Bewegungsrate: "+ player.getMovementRange() + "\n Schaden: "+ player.getAttackDamage() + "\n Gesundheit: " + player.getHealth() + "\n Reichweite: " + player.getAttackRange());
     }

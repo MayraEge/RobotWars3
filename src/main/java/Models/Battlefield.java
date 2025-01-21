@@ -5,7 +5,7 @@ import Enums.Directions;
 public class Battlefield {
     private int width;
     private int height;
-    private int[][] map;
+    protected static int[][] map;
 
     public Battlefield(int width, int height) {
         this.width = width;
@@ -45,27 +45,32 @@ public class Battlefield {
         }
     }
 
-    public static boolean validTurn(Directions direction, Robot spieler) {
-        if (direction.equals(Directions.SUED) && spieler.getY() + 1 <= 9) {
-            return true;
-        } else if (direction.equals(Directions.WEST) && spieler.getX() - 1 >= 0) {
-            return true;
-        } else if (direction.equals(Directions.NORD) && spieler.getY() - 1 >= 0) {
-            return true;
-        } else if (direction.equals(Directions.OST) && spieler.getX() + 1 <= 14) {
-            return true;
-        } else if (direction.equals(Directions.NORDOST) && spieler.getY() - 1 >= 0 && spieler.getX() + 1 <= 14) {
-            return true;
-        } else if (direction.equals(Directions.SUEDOST) && spieler.getX() + 1 <= 14 && spieler.getY() + 1 <= 9) {
-            return true;
-        } else if (direction.equals(Directions.SUEDWEST) && spieler.getX() - 1 >= 0 && spieler.getY() + 1 <= 9) {
-            return true;
-        } else if (direction.equals(Directions.NORDWEST) && spieler.getX() - 1 >= 0 && spieler.getY() - 1 >= 0) {
-            return true;
-        } else if (direction.equals(Directions.NOMOVE)) {
-            return true;
-        } else {
-            return false;
+    public static boolean validTurn(Directions direction, Robot player) {
+        switch (direction) {
+            case SUED:
+                return isValidMove(player.getY() + 1, 9);
+            case WEST:
+                return isValidMove(player.getX() - 1, 0);
+            case NORD:
+                return isValidMove(player.getY() - 1, 0);
+            case OST:
+                return isValidMove(player.getX() + 1, 14);
+            case NORDOST:
+                return isValidMove(player.getY() - 1, 0) && isValidMove(player.getX() + 1, 14);
+            case SUEDOST:
+                return isValidMove(player.getX() + 1, 14) && isValidMove(player.getY() + 1, 9);
+            case SUEDWEST:
+                return isValidMove(player.getX() - 1, 0) && isValidMove(player.getY() + 1, 9);
+            case NORDWEST:
+                return isValidMove(player.getX() - 1, 0) && isValidMove(player.getY() - 1, 0);
+            case NOMOVE:
+                return true;
+            default:
+                return false;
         }
+    }
+
+    private static boolean isValidMove(int coordinate, int limit) {
+        return coordinate >= 0 && coordinate <= limit;
     }
 }

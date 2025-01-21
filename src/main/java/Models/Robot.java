@@ -1,22 +1,23 @@
 package Models;
 
 public class Robot {
+    private String id;
     private String robotName;
-    private int x;
-    private int y;
     private Coordinates coordinates;
     private int health;
     private int movementRate;
     private int attackDamage;
     private int attackRange;
     private boolean knockedOut;
+    private int x;
+    private int y;
 
-    public Coordinates getCoordinates() {
-        return coordinates;
+
+    public String getId(String id){
+        return id;
     }
-
-    public void setCoordinates(Coordinates coordinates) {
-        this.coordinates = coordinates;
+    public void setId(String id){
+        this.id =id;
     }
 
     public String getRobotName() {
@@ -52,14 +53,6 @@ public class Robot {
         this.knockedOut = knockedOut;
     }
 
-    public int getHealth() {
-        return health;
-    }
-
-    public void setHealth(int health) {
-        this.health = health;
-    }
-
     public int getX() {
         return x;
     }
@@ -76,6 +69,14 @@ public class Robot {
         this.y = y;
     }
 
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
     public int getMovementRange() {
         return movementRate;
     }
@@ -84,11 +85,9 @@ public class Robot {
         this.movementRate = movementRange;
     }
 
-
-    public Robot(String robotName, int x, int y, int health, int movementRange, int damage, int attackRange, boolean knockedOut) {
+    public Robot(String id, String robotName, int health, int movementRange, int attackDamage, int attackRange, boolean knockedOut) {
+        this.id = id;
         this.robotName = robotName;
-        this.x = x;
-        this.y = y;
         this.health = health;
         this.movementRate = movementRange;
         this.attackDamage = attackDamage;
@@ -96,9 +95,6 @@ public class Robot {
         this.knockedOut = knockedOut;
     }
 
-    public void move() {
-
-    }
 
     public static void attack(Robot player, Robot target) {
         target.setHealth(target.getHealth() - player.getAttackDamage());
