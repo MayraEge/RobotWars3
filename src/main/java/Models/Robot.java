@@ -40,6 +40,7 @@ public class Robot {
     }
 
     public int setAttackDamage(int attackDamage) {
+        this.attackDamage = attackDamage;
         return attackDamage;
     }
 

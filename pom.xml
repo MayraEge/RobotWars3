@@ -13,6 +13,7 @@
         <maven.compiler.target>22</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
@@ -26,6 +27,10 @@
             <version>5.11.3</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.openjdk.jdk</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>11.0.1</version>
+        </dependency>
     </dependencies>
-
 </project>

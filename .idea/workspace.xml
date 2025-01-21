@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c6df97e-6648-4380-b27d-088a4fd09d53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controllers/HttpRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/HttpRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/HttpRequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Views/AskSkillPointsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/AskSkillPointsView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestHttp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

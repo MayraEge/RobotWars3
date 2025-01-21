@@ -13,7 +13,7 @@ import java.util.List;
 public class GameController {
     public static void main(String[] args) {
         try {
-            String response = HttpRequest.sendGetRequest("https://82rvkz5o22.execute-api.eu-central-1.amazonaws.com/prod/");
+            String response = HttpRequestController.sendGetRequest("https://82rvkz5o22.execute-api.eu-central-1.amazonaws.com/prod/");
             System.out.println(response);
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
@@ -22,7 +22,7 @@ public class GameController {
         Battlefield battlefield = new Battlefield(15, 10);
         String robotName = (AskRobotNameView.display());
         Robot player = new Robot(robotName, 1, 1, 1, 1, 1, 1,   false);
-        Robot target = new Robot("[Z]", 1, 9, 9, 7, 1, 1,  false);
+        Robot target = new Robot("[Z]", 9, 9, 1, 1, 1, 1,  false);
         AskSkillPointsView.setStats(player);
         AskSkillPointsView.display(player);
         List<Robot> robots = new ArrayList<Robot>();
