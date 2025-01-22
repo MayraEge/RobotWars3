@@ -18,28 +18,8 @@ public class RobotService {
         };
     }
     public static boolean inRange(Robot player, Robot target) {
-        if (player.getX() + player.getAttackRange() >= target.getX()
-                && target.getX() >= player.getX()
-                && (player.getY() + player.getAttackRange() >= target.getY()
-                && target.getY() >= player.getY())) {
-            return true;
-        } else if ((player.getX() + player.getAttackRange() >= target.getX()
-                && target.getX() >= player.getX())
-                && (player.getY() - player.getAttackRange() <= target.getY()
-                && target.getY() <= player.getY())) {
-            return true;
-        } else if ((player.getX() - player.getAttackRange() <= target.getX()
-                && target.getX() <= player.getX())
-                && (player.getY() + player.getAttackRange() >= target.getY()
-                && target.getY() >= player.getY())) {
-            return true;
-        } else if ((player.getX() - player.getAttackRange() <= target.getX()
-                && target.getX() <= player.getX())
-                && (player.getY() - player.getAttackRange() <= target.getY()
-                && target.getY() <= player.getY())) {
-            return true;
-        }
-        return false;
+        int dx = Math.abs(player.getX() - target.getX());
+        int dy = Math.abs(player.getY() - target.getY());
+        return dx <= player.getAttackRange() && dy <= player.getAttackRange();
     }
-
 }

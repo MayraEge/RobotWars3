@@ -9,9 +9,9 @@ public class BattlefieldView {
         for (int y = 0; y < battlefield.getHeight(); y++) {
             for (int x = 0; x < battlefield.getWidth(); x++) {
                 if (x == robots.get(0).getX() && y == robots.get(0).getY()) {
-                    System.out.print(robots.get(0).getRobotName());
+                    System.out.print(robots.get(0).getName());
                 } else if (x == robots.get(1).getX() && y == robots.get(1).getY()) {
-                    System.out.print(robots.get(1).getRobotName());
+                    System.out.print(robots.get(1).getName());
                 } else {
                     System.out.print("[ ]");
                 }

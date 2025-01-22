@@ -86,15 +86,11 @@ public class UserController {
             @ApiResponse(description = "Keine Roboter gefunden.", responseCode = "404")
     })
     @GetMapping("/robots")
-    public ResponseEntity<List<Robot>> getAllRobots() {
-        try {
-            List<Robot> robotList = apiService.getRobotsFromApi();
-            if (robotList == null || robotList.isEmpty()) {
-                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-            }
-            return ResponseEntity.ok(robotList);
-        } catch (IOException e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
+    public ResponseEntity<List<Robot>> getAllRobots() throws IOException {
+        List<Robot> robotList = apiService.getRobotsFromApi();
+        if (robotList == null || robotList.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
+        return ResponseEntity.ok(robotList);
     }
 }

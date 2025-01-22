@@ -16,7 +16,7 @@ paths:
           content:
             application/json:
               schema:
-                type: array
+                type: object
                 items:
                   $ref: "#/components/schemas/Robot"
         "500":
@@ -52,6 +52,27 @@ paths:
         type: "aws_proxy"
         httpMethod: "POST"
         passthroughBehavior: "when_no_match"
+  /api/games:
+    get:
+      summary: Liste von Spielen
+      description: Liefert von allen Spielen
+      responses:
+        "200":
+          description: Erfolgreiche Antwort.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Game"
+        "500":
+          description: Interner Serverfehler.
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:eu-central-1:lambda:path/2015-03-31/functions/{{getGamesFunctionArn}}/invocations"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        passthroughBehavior: "when_no_match"
+
   /api/games/game/{id}:
     get:
       summary: Bestimmtes Spiel
@@ -93,6 +114,31 @@ paths:
           description: Interner Serverfehler.
       x-amazon-apigateway-integration:
         uri: "arn:aws:apigateway:eu-central-1:lambda:path/2015-03-31/functions/{{getMapsFunctionArn}}/invocations"
+        type: "aws_proxy"
+        httpMethod: "POST"
+        passthroughBehavior: "when_no_match"
+  /api/maps/map/{id}:
+    get:
+      summary: Bestimmte Karte
+      description: Liefert alle vorhandenen Karten
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Die ID der Karte.
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Erfolgreiche Antwort.
+          content:
+            application/json:
+              schema:
+                  $ref: "#/components/schemas/Map"
+        "500":
+          description: Interner Serverfehler.
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:eu-central-1:lambda:path/2015-03-31/functions/{{getMapFunctionArn}}/invocations"
         type: "aws_proxy"
         httpMethod: "POST"
         passthroughBehavior: "when_no_match"

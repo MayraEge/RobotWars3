@@ -1,35 +1,69 @@
 package Service;
 
-import java.io.BufferedReader;
+import Controllers.HttpRequestController;
+import Models.Robot;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Service;
+
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import Models.Robot;
 
+@Service
 public class ApiService {
+    protected static String baseURL = "https://82rvkz5o22.execute-api.eu-central-1.amazonaws.com/prod/";
+    protected static String botURL = "https://82rvkz5o22.execute-api.eu-central-1.amazonaws.com/prod/api/robots/robot";
+    protected static String mapURL = "https://82rvkz5o22.execute-api.eu-central-1.amazonaws.com/prod/api/maps";
+    protected static String gameURL = "https://82rvkz5o22.execute-api.eu-central-1.amazonaws.com/prod/api/games/game";
+    protected static String mapId = "";
+    protected static String robotId ="";
+    protected static String gameId = "";
+    protected static String playerId = "";
 
-    private static final String API_URL = "https://82rvkz5o22.execute-api.eu-central-1.amazonaws.com/prod/robots";
-
-    public List<Robot> getRobotsFromApi() throws IOException {
-        URL url = new URL(API_URL);
-        HttpURLConnection con = (HttpURLConnection) url.openConnection();
-        con.setRequestMethod("GET");
-
-        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuffer content = new StringBuffer();
-        while ((inputLine = in.readLine()) != null) {
-            content.append(inputLine);
+    public String convertRobotToJson(Robot robot) {
+        JsonConverter converter = new JsonConverter();
+        converter.convertToJson(robot);
+        return converter.getJsonInputString();
+    }
+    public void sendRobotToApi(Robot robot) {
+        String robotJson = convertRobotToJson(robot);
+        try {
+            String response = HttpRequestController.sendPostRequest(botURL, robotJson);
+            System.out.println("Response from API: " + response);
+        } catch (IOException | InterruptedException e) {
+            System.err.println("Error sending robot to API: " + e.getMessage());
+            e.printStackTrace();
         }
-        in.close();
-        con.disconnect();
+    }
+        public List<Robot> getRobotsFromApi() {
+        try {
+            String response = HttpRequestController.sendGetRequest(botURL);
+            ObjectMapper mapper = new ObjectMapper();
+            Robot[] robotsArray = mapper.readValue(response, Robot[].class);
+            return new ArrayList<>(List.of(robotsArray));
 
-        ObjectMapper mapper = new ObjectMapper();
-        Robot[] robotsArray = mapper.readValue(content.toString(), Robot[].class);
-        return new ArrayList<>(List.of(robotsArray));
+        } catch (IOException e) {
+            System.err.println("IOException occurred while processing the response: " + e.getMessage());
+            e.printStackTrace();
+            return new ArrayList<>();
+        } catch (InterruptedException e) {
+            System.err.println("Request was interrupted: " + e.getMessage());
+            e.printStackTrace();
+            return new ArrayList<>();
+        }
+    }
+    public Robot getRobotById(String robotId) {
+        try {
+            String url = botURL + "/" + robotId;
+            String response = HttpRequestController.sendGetRequest(url);
+            ObjectMapper mapper = new ObjectMapper();
+            return mapper.readValue(response, Robot.class);
+        } catch (IOException e) {
+            return null;
+        } catch (InterruptedException e) {
+            System.err.println("Request was interrupted: " + e.getMessage());
+            e.printStackTrace();
+            return null;
+        }
     }
 }

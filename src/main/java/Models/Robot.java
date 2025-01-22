@@ -1,8 +1,10 @@
 package Models;
 
+import org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration;
+
 public class Robot {
     private String id;
-    private String robotName;
+    private String name;
     private Coordinates coordinates;
     private int health;
     private int movementRate;
@@ -12,20 +14,29 @@ public class Robot {
     private int x;
     private int y;
 
+    public Robot(String id, String name, int health, int movementRange, int attackDamage, int attackRange, boolean knockedOut) {
+        this.id = id;
+        this.name = name;
+        this.health = health;
+        this.movementRate = movementRange;
+        this.attackDamage = attackDamage;
+        this.attackRange = attackRange;
+        this.knockedOut = knockedOut;
+    }
 
-    public String getId(String id){
+    public String getId(){
         return id;
     }
     public void setId(String id){
         this.id =id;
     }
 
-    public String getRobotName() {
-        return this.robotName;
+    public String getName() {
+        return this.name;
     }
 
-    public void setRobotName(String robotName) {
-        this.robotName = robotName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAttackRange() {
@@ -40,9 +51,8 @@ public class Robot {
         return attackDamage;
     }
 
-    public int setAttackDamage(int attackDamage) {
+    public void setAttackDamage(int attackDamage) {
         this.attackDamage = attackDamage;
-        return attackDamage;
     }
 
     public boolean isKnockedOut() {
@@ -84,17 +94,6 @@ public class Robot {
     public void setMovementRange(int movementRange) {
         this.movementRate = movementRange;
     }
-
-    public Robot(String id, String robotName, int health, int movementRange, int attackDamage, int attackRange, boolean knockedOut) {
-        this.id = id;
-        this.robotName = robotName;
-        this.health = health;
-        this.movementRate = movementRange;
-        this.attackDamage = attackDamage;
-        this.attackRange = attackRange;
-        this.knockedOut = knockedOut;
-    }
-
 
     public static void attack(Robot player, Robot target) {
         target.setHealth(target.getHealth() - player.getAttackDamage());
