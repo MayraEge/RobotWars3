@@ -1,6 +1,5 @@
 package Models;
-
-import org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration;
+import Models.Coordinates;
 
 public class Robot {
     private String id;
@@ -11,8 +10,6 @@ public class Robot {
     private int attackDamage;
     private int attackRange;
     private boolean knockedOut;
-    private int x;
-    private int y;
 
     public Robot(String id, String name, int health, int movementRange, int attackDamage, int attackRange, boolean knockedOut) {
         this.id = id;
@@ -63,22 +60,6 @@ public class Robot {
         this.knockedOut = knockedOut;
     }
 
-    public int getX() {
-        return x;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
     public int getHealth() {
         return health;
     }
@@ -93,6 +74,18 @@ public class Robot {
 
     public void setMovementRange(int movementRange) {
         this.movementRate = movementRange;
+    }
+
+    public Coordinates getCoordinates() {
+        return coordinates;
+    }
+
+    public void setCoordinates(Coordinates coordinates) {
+        this.coordinates = coordinates;
+    }
+
+    public int calculatePosition() {
+        return coordinates.calculatePosition();
     }
 
     public static void attack(Robot player, Robot target) {

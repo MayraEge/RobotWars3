@@ -4,14 +4,19 @@ import com.google.gson.Gson;
 
 public class JsonConverter {
     private String jsonInputString;
+    private Gson gson;
 
-    public void convertToJson(Object t) {
+    public JsonConverter(){
+        this.gson = new Gson();
+    }
+
+    public String convertToJson(Object t) {
         if (t instanceof String) {
             jsonInputString = (String) t;
         } else {
-            Gson gson = new Gson();
             jsonInputString = gson.toJson(t);
         }
+        return jsonInputString;
     }
 
     public String getJsonInputString() {

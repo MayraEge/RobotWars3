@@ -5,20 +5,159 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c6df97e-6648-4380-b27d-088a4fd09d53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/GameService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/JsonConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/.swagger-codegen-ignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/.swagger-codegen/VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/build.sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/Align.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/DefaultApi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/Game.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/JoinGame.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/JoinGameResponse.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/MapMapItems.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/Move.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/MovementType.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/NewGame.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/NewMove.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/NewRobot.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/PlayerRobot.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/docs/Robot.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/git_push.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/ApiCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/GzipRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/JSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/ProgressRequestBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/ProgressResponseBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/api/DefaultApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/auth/ApiKeyAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/auth/Authentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/auth/HttpBasicAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/auth/OAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/auth/OAuthFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/Align.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/JoinGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/JoinGameResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/MapMapItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/MovementType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/NewGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/NewMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/NewRobot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/PlayerRobot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/main/java/io/swagger/client/model/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-client-generated/src/test/java/io/swagger/client/api/DefaultApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Models/NewRobot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ApiCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ApiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/GzipRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/JSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ProgressRequestBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/ProgressResponseBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/api/DefaultApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/auth/ApiKeyAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/auth/Authentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/auth/HttpBasicAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/auth/OAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/auth/OAuthFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/Align.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/JoinGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/JoinGameResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/MapMapItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/MovementType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/NewGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/NewMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/NewRobot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/PlayerRobot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/model/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/ApiCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/GzipRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/JSON.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/ProgressRequestBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/ProgressResponseBody.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/api/DefaultApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/auth/ApiKeyAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/auth/Authentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/auth/HttpBasicAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/auth/OAuth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/auth/OAuthFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/Align.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/JoinGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/JoinGameResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/MapMapItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/MovementType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/NewGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/NewMove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/NewRobot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/PlayerRobot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/main/java/io/swagger/client/model/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swagger-codegen/src/test/java/io/swagger/client/api/DefaultApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/HttpRequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/HttpRequestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/RobotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/RobotController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controllers/HttpRequestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Models/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Robot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Service/ApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/ApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/RobotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/RobotService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/BattlefieldView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/BattlefieldView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Views/DisplayWinnerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Views/DisplayWinnerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/RobotWarsOpenApiSpec (1).yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/RobotWarsOpenApiSpec 3.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/JsonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/JsonConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore-security-test/java/okhttp-gson/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore-security-test/java/okhttp-gson/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/android/volley/src/main/java/io/swagger/client/ApiInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/android/volley/src/main/java/io/swagger/client/ApiInvoker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/jersey1/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/jersey1/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/jersey2-java8/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/jersey2-java8/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/jersey2/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/jersey2/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/okhttp-gson-parcelableModel/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/okhttp-gson-parcelableModel/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/okhttp-gson/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/okhttp-gson/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/okhttp4-gson-parcelableModel/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/okhttp4-gson-parcelableModel/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/okhttp4-gson/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/okhttp4-gson/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/resteasy/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/resteasy/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/resttemplate-withXml/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/resttemplate-withXml/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/resttemplate/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/resttemplate/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit2-play24/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit2-play24/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit2-play25/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit2-play25/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit2/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit2/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit2rx/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit2rx/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit2rx2/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/retrofit2rx2/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/vertx/src/main/java/io/swagger/client/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-codegen/samples/client/petstore/java/vertx/src/main/java/io/swagger/client/ApiClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,25 +196,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.GameController.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.RobotWarsTest [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MAEGE/IdeaProjects/RobotWarsNeu&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GameController.executor": "Run",
+    "Maven.RobotWarsTest [clean].executor": "Run",
+    "Maven.RobotWarsTest [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/MAEGE/OneDrive - BTC AG/Dokumente/Bootcamp/TestOrdner",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MAEGE\OneDrive - BTC AG\Dokumente\Bootcamp\TestOrdner" />
+      <recent name="C:\Users\MAEGE\OneDrive - BTC AG\Dokumente\Bootcamp\TestOrdner\swagger-codegen\src\main\java\io\swagger\client\auth" />
+      <recent name="C:\Users\MAEGE\OneDrive - BTC AG\Dokumente\Bootcamp\TestOrdner\src\main\java" />
+      <recent name="C:\Users\MAEGE\OneDrive - BTC AG\Dokumente\Bootcamp\TestOrdner\swagger-codegen" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MAEGE\OneDrive - BTC AG\Dokumente\Bootcamp\TestOrdner\src\main\resources" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
